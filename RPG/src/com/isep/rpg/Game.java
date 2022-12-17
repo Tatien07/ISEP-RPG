@@ -183,34 +183,34 @@ public class Game {
                             System.out.println("Vous pouvez choisir, en rentrant un nombre, entre : augmenter le nombre de point de vie max de 10 (1), gagner 1 potion (2), gagner 1 lembas (3)");
                             int choix1 = scanner.nextInt();
                             switch (choix1) {
-                                case 1 -> b.setMaxArmure(b.getMaxArmure() + 10);
-                                case 2 -> b.setNbrpotion(b.getNbrpotion() + 1);
-                                case 3 -> b.setNbrlembas(b.getNbrlembas() + 1);
+                                case 1 -> { b.setMaxArmure(b.getMaxArmure() + 10); System.out.println(b.getname() + " a maintenant " + b.getMaxArmure()  + " de points de vie max !"); }
+                                case 2 -> { b.setNbrpotion(b.getNbrpotion() + 1); System.out.println(b.getname() + " a maintenant " + b.getNbrpotion()  + " potions !"); }
+                                case 3 -> { b.setNbrlembas(b.getNbrlembas() + 1); System.out.println(b.getname() + " a maintenant " + b.getNbrlembas()  + " lembas !"); }
                             }
                         case "healer":
                             System.out.println("Choissez ce que vous voulez comme bonus pour " + b.getname());
                             System.out.println("Vous pouvez choisir, en rentrant un nombre, entre : augmenter le nombre de point de vie max de 10 (1), gagner 1 potion (2), gagner 1 lembas (3)");
                             int choix2 = scanner.nextInt();
                             switch (choix2) {
-                                case 1 -> b.setMaxArmure(b.getMaxArmure() + 10);
-                                case 2 -> b.setNbrpotion(b.getNbrpotion() + 1);
-                                case 3 -> b.setNbrlembas(b.getNbrlembas() + 1);
+                                case 1 -> { b.setMaxArmure(b.getMaxArmure() + 10); System.out.println(b.getname() + " a maintenant " + b.getMaxArmure()  + " de points de vie max !");}
+                                case 2 -> { b.setNbrpotion(b.getNbrpotion() + 1); System.out.println(b.getname() + " a maintenant " + b.getNbrpotion()  + " potions !");}
+                                case 3 -> { b.setNbrlembas(b.getNbrlembas() + 1); System.out.println(b.getname() + " a maintenant " + b.getNbrlembas()  + " lembas !"); }
                             }
                         case "hunter":
                             System.out.println("Choissez ce que vous voulez comme bonus pour " + b.getname());
                             System.out.println("Vous pouvez choisir, en rentrant un nombre, entre : augmenter le nombre de point de vie max de 10 (1), gagner 1 lembas (2)");
                             int choix3 = scanner.nextInt();
                             switch (choix3) {
-                                case 1 -> b.setMaxArmure(b.getMaxArmure() + 10);
-                                case 2 -> b.setNbrlembas(b.getNbrlembas() + 1);
+                                case 1 -> { b.setMaxArmure(b.getMaxArmure() + 10); System.out.println(b.getname() + " a maintenant " + b.getMaxArmure()  + " de points de vie max !");}
+                                case 2 -> { b.setNbrlembas(b.getNbrlembas() + 1); System.out.println(b.getname() + " a maintenant " + b.getNbrlembas()  + " lembas !"); }
                             }
                         case "warrior":
                             System.out.println("Choissez ce que vous voulez comme bonus pour " + b.getname());
                             System.out.println("Vous pouvez choisir, en rentrant un nombre, entre : augmenter le nombre de point de vie max de 10 (1), gagner 1 lembas (2)");
                             int choix4 = scanner.nextInt();
                             switch (choix4) {
-                                case 1 -> b.setMaxArmure(b.getMaxArmure() + 10);
-                                case 2 -> b.setNbrlembas(b.getNbrlembas() + 1);
+                                case 1 ->{ b.setMaxArmure(b.getMaxArmure() + 10); System.out.println(b.getname() + " a maintenant " + b.getMaxArmure()  + " de points de vie max !");}
+                                case 2 -> { b.setNbrlembas(b.getNbrlembas() + 1); System.out.println(b.getname() + " a maintenant " + b.getNbrlembas()  + " lembas !"); }
                             }
                     }
 
