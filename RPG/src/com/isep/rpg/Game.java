@@ -106,7 +106,7 @@ public class Game {
             }
 
             // Commencer le combat
-            while (heros.size() != 0 || enemies.size() != 0) {
+            while (heros.size() != 0 && enemies.size() != 0) {
                 var numenemy = ThreadLocalRandom.current().nextInt(0, enemies.size());
                 var numheros = ThreadLocalRandom.current().nextInt(0, heros.size());
                 var randheros = heros.get(numheros);
